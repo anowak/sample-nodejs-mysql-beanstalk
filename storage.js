@@ -27,8 +27,7 @@ Storage.prototype.populate = function() {
 
 Storage.prototype.score = function() {
   return nodefn.call(this.query, 'SELECT * FROM scores').then(function(rows, fields) {
-    console.log(rows[0]);
-    return Number(rows[0].score);
+    return Number(rows[0][0].score);
   });
 }
 
