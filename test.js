@@ -13,11 +13,11 @@ describe('Storage', function() {
   });
 
   it('should populate storage without an error', function() {
-    expect(this.storage.populate()).to.be.fulfilled;
+    return expect(this.storage.populate()).to.be.fulfilled;
   });
 
   it('should retrieve correct value after being populated', function() {
-    var promise = this.storage.populate().then(this.storage.score.bind(this));
-    expect(promise).to.become(1234);
+    var promise = this.storage.populate().then(this.storage.score.bind(this.storage));
+    return expect(promise).to.become(1234);
   });
 });
