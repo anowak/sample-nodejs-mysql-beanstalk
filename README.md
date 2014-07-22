@@ -1,4 +1,4 @@
-sample-nodejs-mysql-beanstalk
+Sample Node.js-MySQL Beanstalk
 =============================
 
 This sample demonstrates how to setup continuous integration and deployment for a Node.js+MySQL project deployed using Amazon Elastic Beanstalk.
