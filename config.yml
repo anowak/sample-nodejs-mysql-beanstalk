@@ -1,0 +1,8 @@
+branch-defaults:
+  master:
+    environment: sample-nodejs-env
+global:
+  application_name: sample-nodejs
+  default_region: us-west-2
+  profile: eb-cli
+  sc: git
